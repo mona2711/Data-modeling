@@ -1,0 +1,6 @@
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|			File link				|		Description									 |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|https://snap.stanford.edu/data/soc-redditHyperlinks-body.tsv	|Network of subreddit-to-subreddit hyperlinks extracted from hyperlinks in the body of the post. |
+|https://snap.stanford.edu/data/soc-redditHyperlinks-title.tsv	|Network of subreddit-to-subreddit hyperlinks extracted from hyperlinks in the title of the post.|
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------

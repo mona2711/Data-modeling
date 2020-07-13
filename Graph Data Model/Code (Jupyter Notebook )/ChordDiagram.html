@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<script>
+// create the svg area
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", 840)
+    .attr("height", 840)
+  .append("g")
+    .attr("transform", "translate(330,330)")
+// create a matrix
+var matrix = [
+  [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+       [0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 1, 1, 0, 0, 0, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+];
+// 4 groups, so create a vector of 4 colors
+var colors = [ "#440154ff", "#31668dff", "#37b578ff", "#fde725ff","#7D3C98", "#F4D03F", "#EC7063", "#C0392B","#0B5345", "#DC7633",]
+// give this matrix to d3.chord(): it will calculates all the info we need to draw arc and ribbon
+var res = d3.chord()
+    .padAngle(0.05)
+    .sortSubgroups(d3.descending)
+    (matrix)
+// add the groups on the outer part of the circle
+var conLabels = ['peoplewhosayheck',
+ 'bestof',
+ 'subredditdrama',
+ 'procss',
+ 'drama',
+ 'titlegore',
+ 'circlebroke2',
+ 'brasilonreddit',
+ 'shitliberalssay',
+ 'shitpost'];
+ var temp;
+svg
+  .datum(res)
+  .append("g")
+  .selectAll("g")
+  .data(function(d) { 
+    for (i = 0; i < d.groups.length; i++) {
+      d.groups[i].value2 = conLabels[i];
+    }
+    temp = d.groups;
+    // console.log(temp);
+    return d.groups; })
+  .enter()
+  .append("g")
+  .append("path")
+    .style("fill", function(d,i){ return colors[i] })
+    .style("stroke", "black")
+    .attr("d", d3.arc()
+      .innerRadius(200)
+      .outerRadius(210)
+    )
+// Add the links between groups
+svg
+  .datum(res)
+  .append("g")
+  .selectAll("path")
+  .data(function(d) { return d; })
+  .enter()
+  .append("path")
+    .attr("d", d3.ribbon()
+      .radius(200)
+    )
+    .style("fill", function(d){ return(colors[d.source.index]) }) // colors depend on the source group. Change to target otherwise.
+    .style("stroke", "black");
+// Add the ticks
+var group = svg
+  .datum(res)
+  .append("g")
+  .selectAll("g")
+  .data(function(d) { return d.groups; })
+  .enter()
+group
+  .selectAll(".group-tick")
+  .data(function(d) { return groupTicks(d, 25); })    // Controls the number of ticks: one tick each 25 here.
+  .enter()
+  .append("g")
+    .attr("transform", function(d) { return "rotate(" + (d.angle * 180 / Math.PI - 90) + ") translate(" + 200 + ",0)"; })
+  .append("line")               // By default, x1 = y1 = y2 = 0, so no need to specify it.
+    .attr("x2", 6)
+    .attr("stroke", "black")
+// Add the labels of a few ticks:
+group
+  .selectAll(".group-tick-label")
+  .data(function(d) { return groupTicks(d, 25); })
+  .enter()
+  .filter(function(d) { return d.value % 25 === 0; })
+  .append("g")
+    .attr("transform", function(d) { return "rotate(" + (d.angle * 180 / Math.PI - 90) + ") translate(" + 200 + ",60)"; })
+  .append("text")
+    .attr("x", 15)
+    .attr("dy", ".200em")
+    .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
+    .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+    .text(function(d) { 
+        for (i = 0; i < temp.length; i++) {
+      if(d.angle == temp[i].startAngle){
+        return temp[i].value2;
+      }      }
+       })
+    .style("font-size", 19)
+// Returns an array of tick angles and values for a given group and step.
+function groupTicks(d, step) {
+  var k = (d.endAngle - d.startAngle) / d.value;
+  return d3.range(0, d.value, step).map(function(value) {
+    return {value: value, angle: value * k + d.startAngle};
+  });
+}
+</script>
