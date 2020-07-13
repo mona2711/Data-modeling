@@ -1,0 +1,129 @@
+Posts,RelatedPost
+Some suggestion for career in data science or predictive modeling,statistics   computer science   data science 
+How to classify and cluster this time series data,how to deal with time series which change in seasonality or other patterns 
+Business exception reporting,tools and protocol for reproducible data science using python
+Web Framework Built for Recommendations,organized processes to clean data
+High-dimensional data: What are useful techniques to know?,nearest neighbors search for very high dimensional data
+Rank players of any given sport,can machine learning algorithms predict sports scores or plays 
+Graph layout for a network of molecules,visualizing a graph with a million vertices
+Where can I find resources and papers regarding Data Science in the area of Public Health,data science project ideas
+Possibility of working on KDDCup data in local system,is the r language suitable for big data
+How can I use Data Science to profoundly contribute to Humanity?,data science project ideas
+Finding user similarities within informal data sets,dataset for named entity recognition on informal text
+Master degree in Data Science,books about the  science  in data science 
+Using attributes to classify/cluster user profiles,need help with lda for selecting features
+How can an undergraduate learn more about deep learning?,deep learning basics
+What is a good non cryptographic Hash for string feature translation?,neural network parse string data 
+Denoising Autoenoders with Variable Length Input,training neural networks with unknown length of input
+"How to start analysing and modelling data for an academic project, when not a statistician or data scientist",tools and protocol for reproducible data science using python
+Credit card fraud detection - anomaly detection based on amount of money to be withdrawn?,machine learning   features engineering from date time data
+Predictive analysis of rare events,what are the implications for training a tree ensemble with highly biased datasets 
+How does strided deconvolution works?,what is deconvolution operation used in fully convolutional neural networks 
+How can one can aim for a career in machine learning?,data science   machine learning resources 
+Free/open interactive softwares/plugins for end-users' high-dimensional data visualization,purpose of visualizing high dimensional data 
+Gradient Boosted Trees or Neural Networks Using Model Averaging?,quick guide into training highly imbalanced data sets
+Classification technique for unsupervised data?,clustering categorical data
+How do you define the steps to explore the data?,machine learning steps
+What is the difference between the training and testdata set?,does the training set of one topic will be useful to predicate the sentiment for any other topic 
+Clustering users based on buying behaviour,boundary conditions for clustering
+Should I use regularization every time?,how to detect overfitting of a stock screener
+Clustering categorical data,k means clustering for mixed numeric and categorical data
+Data science / machine learning books for mathematicians,books about the  science  in data science 
+Multiple output classes in keras,activation method and loss function for multilabel multiclass classification
+Anomaly detection for transaction data,anomaly detection in time series data   help required
+"Gradient Boosting Tree: ""the more variable the better""?",why k fold cross validation  cv  overfits  or why discrepancy occurs between cv and test set 
+How to implement patternet in python as it is in matlab?,is it possible to customize the activation function in scikit learn s mlpclassifier 
+Number of parameters in seq2seq model,number of parameters in an lstm model
+Pros and cons of pandas or R for longitudinal data?,pros and cons of python and r for data science
+Word2Vec Alternative for Smaller Datasets,how much training data does word2vec need 
+Cluster documents and identify the prominent document in the cluster?,cluster documents based on topic similarity
+How to perform Logistic Regression with a large number of features?,does scikit learn have forward selection stepwise regression algorithm 
+What pre processing should I use on data to feed into a CNN?,should the output of regression models  like svr  be normalized 
+Does nearest neighbour make any sense with t-SNE?,are t sne dimensions meaningful 
+RNN time-series predictions with multiple features containing non-numeric features and numeric features?,rnn s with multiple features
+What is Hellinger Distance and when to use it?,combine two sets of clusters
+Why ReLU is better than the other activation functions,what is the  dying relu  problem in neural networks 
+Sentence similarity prediction,text similarity using rnn
+Does gradient descent always converge to an optimum?,does mlp always find local minimum
+Classifying with certainty,neural networks  which cost function to use 
+Input normalization for ReLu?,why relu is better than the other activation functions
+Rprop is too noisy,strange behavior with adam optimizer when training for too long
+Meaning of Perceptron optimal weights,does mlp always find local minimum
+Evaluating new features,in supervised learning  why is it bad to have correlated features 
+Why is ReLU used as an activation function?,why relu is better than the other activation functions
+What should be the main concerns when generating extra data?,what does it mean for the training data to be generated by a probability distribution over datasets
+How to set the number of neurons and layers in neural networks,why do convolutional neural networks work 
+Neural Network Performs Bad On MNIST,neural network  backpropagation works on mnist  but training test set accuracy very low
+Building a Citation Network to Analyze in R,echo effect metric network
+Should the different layers of deep learning models have same size or they should be changed based on a rule,how to set the number of neurons and layers in neural networks
+Clustering combining numeric features and weekday & hour cyclic features,what is a good way to transform cyclic ordinal attributes 
+TensorFlow: number of channels of conv1d filter,example of 1d convnet filter
+Sliding window leads to overfitting in LSTM?,number of parameters in an lstm model
+How to classify movement data (time series) in real time,using time series data from a sensor for ml
+Weight decay in neural network,heuristic argument for weight decay and regularization
+Choosing input variables for Linear Regression for higher accuracy,choosing a model for dataset with categorical variables
+Using a pre trained CNN classifier and apply it on a different image dataset,using time series data from a sensor for ml
+Polynomial regression vs. multilayer perceptron,how to apply my deep learning model to a new dataset 
+How to use correct weights in linear regression model,purpose of weights in neural networks
+Re: Logistic Regression,smote and multi class oversampling
+Multivariate Time-Series Clustering,similarity measure for multivariate time series with heterogeous length and content
+The connection between optimization and generalization,why large weights are prohibited in neural networks 
+Are CNNs insensitive to rotations and shifts in images?,why do convolutional neural networks work 
+How to plot learning curve and validation curve while using pipeline,how to set class weights for imbalanced classes in keras 
+"How does ""linear algebraic"" weight training function work?",how to set the number of neurons and layers in neural networks
+Alternatives to Logistic Regression,interpreting decision tree in context of feature importances
+Video classification of birds,data augmentation  rotating images and zero values
+What should be the ratio of True vs False cases in a binary classifier dataset?,k means clustering for mixed numeric and categorical data
+The goal of fine tuning,using a pre trained cnn classifier and apply it on a different image dataset
+What are the cases where it is fine to initialize all weights to zero,how to  deep neural network weight initialization
+Which supervised learning algorithm to classify customers buying items,is there any standard pattern recognition algorithm in predicting an item which a user will be buying next  given i have the history of the purchases
+How to understand backpropagation using derivative,role derivative of sigmoid function in neural networks
+"Given a query image Q and two other images X and Y, how to determine which one is most similar to Q?",neural networks   find most similar images
+Could someone explain to me how back-prop is done for the generator in a GAN?,back propagation in cnn
+Multi Class + Negative Class Image Classification Strategies, other  class in image classification
+More layers in NN give worse result,how to set the number of neurons and layers in neural networks
+RNNs for time series prediction - what configurations would make sense,how to set the number of neurons and layers in neural networks
+Matching similar strings,sliding window leads to overfitting in lstm 
+1d time series to time series approximation using deep learning,example of 1d convnet filter
+Training with multi-series of different length with stateful LSTM,batch size of stateful lstm in keras
+Properly using activation functions of neural network,why large weights are prohibited in neural networks 
+XGBoost: Quantifying Feature Importances,xgboost   how to use feature importances  with xgbregressor   
+Validation data for multi-series stateful LSTM,stateful lstm   using different training window
+What are the benefits and tradeoffs of a 1D conv vs a multi-input seq2seq LSTM model?,keras lstm with 1d time series
+Rather use many linear classifiers than one complex one for numerical data?,is it possible to implement a classifier according to quarters  what about missing data 
+Backpropagation - simplest explanation,compute backpropagation
+"Detect multicollinearity in real-life, non-normally distributed data",does xgboost handle multicollinearity by itself 
+Neural network example not working with sigmoid activation function,creating neural net for xor function
+Learning rate of perception,do adaptive learning optimizers follow the steepest decent 
+How far can one go with excel?,do data scientists use excel 
+LSTM for time series - which window size to use,sliding window leads to overfitting in lstm 
+LSTM train on varying length sequences,how to feed lstm with different input array sizes 
+"In supervised learning, how to get info from correlation?",dissmissing features based on correlation with target variable
+Log loss vs accuracy for deciding between different learning rates?,what is the relationship between the accuracy and the loss in deep learning 
+How to deal with missing data for Bernoulli Naive Bayes?,how does the naive bayes classifier handle missing data in training 
+Is there any way how to make samples balanced?,binary classification of every time series step based on past and future values
+What is the purpose of a 1x1 convolutional layer?,how are 1x1 convolutions the same as a fully connected layer 
+Correlation between nominal categorical variables,keras lstm with 1d time series
+Using LSTM's on Multivariate Input AND Multivariate Output,multi dimentional and multivariate time series forecast  rnn lstm  keras
+Merging dataframes in Pandas is taking a surprisingly long time,how to get correlation between two categorical variable and a categorical variable and continuous variable 
+Deep network not able to learn imbalanced data beyond the dominant class,multivariate time series forecasting using lstm
+Anomaly detection without any knowledge about structure,how to set class weights for imbalanced classes in keras 
+Train a model for unstructured data,best approach for this unsupervised clustering problem with categorical data 
+Over fitting in Transfer Learning with small dataset,how to set batch size  steps per epoch and validation steps
+Why can decision trees have a high amount of variance,are decision tree algorithms linear or nonlinear
+Why use Variational Autoencoders VAE instead of Autoencoders AE in Anomaly Detection?,variational auto encoders  vae   why the random sample 
+Why real-world output of my classifier has similar label ratio to training data?,train classifier on balanced dataset and apply on imbalanced dataset 
+How to design batches in a stateful RNN,how to feed lstm with different input array sizes 
+Best way to classify plots which are overlapping?,what is the best method for classification of time series data  should i use lstm or a different method 
+activation functions in CNN,why is relu used as an activation function 
+How to prevent model from recognizing false Classes,fine tuning a cnn for recognizing two classes  but also being able to tell if none of them is present in an image
+How are Q-value and state value different in reinforcement learning,what is the q function and what is the v function in reinforcement learning 
+A model that only works by setting all initial weights to zero,initialize perceptron weights with zero
+Should input images be normalized to -1 to 1 or 0 to 1,data preprocessing  should we normalise images pixel wise 
+2019 - Bleeding edge Reinforcement Learning techniques?,prioritized replay  what does importance sampling really do 
+RandomForest surprisingly high accuracy,how to quantify the performance of the classifier  multi class svm  using the test data 
+Doc2Vec for multi class classification,doc2vec   how to label the paragraphs  gensim 
+What is the Value of X in KNN and Why?,logic behind weighted knn
+At what value of Accuracy of train and test we can say Model is overfitting and Underfitting?,validation training accuracy and overfitting
+Can machine learning learn a function like finding maximum from a list?,sort numbers using only 2 hidden layers
+Error loading tidyverse in R Studio - No broom package,having trouble installing and loading tidyverse  no dib package

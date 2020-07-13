@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<meta charset="UTF-8">
+<title>Post Suggestions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<style>
+.dropdown-toggle{
+ width:100%;
+}
+.row{
+border: 1px solid blue;
+padding: 50px;
+}
+.heading{
+font-size:30px;
+font-weight:bold;
+padding-bottom:30px;
+}
+.container{
+padding:50px 0;
+}
+.selections{
+font-size:24px;
+font-weight:bold;
+color:blue;
+}
+.dropdown-menu{
+height: 400px; 
+overflow: auto;
+}
+.dropdown-menu li{
+padding:5px 10px;
+font-size:14px;
+}
+#post{
+margin-top:20px;
+}
+ li:hover {
+    background-color: #f5f5f5;
+	cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">  
+<div class="heading center">Post Suggestions:</div>
+      
+<div class="row">    
+<div class="col-xs-6">                             
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Post for related posts suggestions
+    <span class="caret"></span></button>
+	
+    <ul class="dropdown-menu">
+    </ul>
+  </div>
+  <div id="post" class="selections"></div>
+ </div> 
+ 
+ <div class="col-xs-6"> 
+    <p style = "font-size:30px;font-weight:bold;">Related Post </p>
+  	<div id="relatedpost" class="selections"></div>
+ </div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+var posts = ['Some suggestion for career in data science or predictive modeling',
+ 'How to classify and cluster this time series data',
+ 'Business exception reporting',
+ 'Web Framework Built for Recommendations',
+ 'High-dimensional data: What are useful techniques to know?',
+ 'Rank players of any given sport',
+ 'Graph layout for a network of molecules',
+ 'Where can I find resources and papers regarding Data Science in the area of Public Health',
+ 'Possibility of working on KDDCup data in local system',
+ 'How can I use Data Science to profoundly contribute to Humanity?',
+ 'Finding user similarities within informal data sets',
+ 'Master degree in Data Science',
+ 'Using attributes to classify/cluster user profiles',
+ 'How can an undergraduate learn more about deep learning?',
+ 'What is a good non cryptographic Hash for string feature translation?',
+ 'Denoising Autoenoders with Variable Length Input',
+ 'How to start analysing and modelling data for an academic project, when not a statistician or data scientist',
+ 'Credit card fraud detection - anomaly detection based on amount of money to be withdrawn?',
+ 'Predictive analysis of rare events',
+ 'How does strided deconvolution works?',
+ 'How can one can aim for a career in machine learning?',
+ "Free/open interactive softwares/plugins for end-users' high-dimensional data visualization",
+ 'Gradient Boosted Trees or Neural Networks Using Model Averaging?',
+ 'Classification technique for unsupervised data?',
+ 'How do you define the steps to explore the data?',
+ 'What is the difference between the training and testdata set?',
+ 'Clustering users based on buying behaviour',
+ 'Should I use regularization every time?',
+ 'Clustering categorical data',
+ 'Data science / machine learning books for mathematicians',
+ 'Multiple output classes in keras',
+ 'Anomaly detection for transaction data',
+ 'Gradient Boosting Tree: "the more variable the better"?',
+ 'How to implement patternet in python as it is in matlab?',
+ 'Number of parameters in seq2seq model',
+ 'Pros and cons of pandas or R for longitudinal data?',
+ 'Word2Vec Alternative for Smaller Datasets',
+ 'Cluster documents and identify the prominent document in the cluster?',
+ 'How to perform Logistic Regression with a large number of features?',
+ 'What pre processing should I use on data to feed into a CNN?',
+ 'Does nearest neighbour make any sense with t-SNE?',
+ 'RNN time-series predictions with multiple features containing non-numeric features and numeric features?',
+ 'What is Hellinger Distance and when to use it?',
+ 'Why ReLU is better than the other activation functions',
+ 'Sentence similarity prediction',
+ 'Does gradient descent always converge to an optimum?',
+ 'Classifying with certainty',
+ 'Input normalization for ReLu?',
+ 'Rprop is too noisy',
+ 'Meaning of Perceptron optimal weights',
+ 'Evaluating new features',
+ 'Why is ReLU used as an activation function?',
+ 'What should be the main concerns when generating extra data?',
+ 'How to set the number of neurons and layers in neural networks',
+ 'Neural Network Performs Bad On MNIST',
+ 'Building a Citation Network to Analyze in R',
+ 'Should the different layers of deep learning models have same size or they should be changed based on a rule',
+ 'Clustering combining numeric features and weekday & hour cyclic features',
+ 'TensorFlow: number of channels of conv1d filter',
+ 'Sliding window leads to overfitting in LSTM?',
+ 'How to classify movement data (time series) in real time',
+ 'Weight decay in neural network',
+ 'Choosing input variables for Linear Regression for higher accuracy',
+ 'Using a pre trained CNN classifier and apply it on a different image dataset',
+ 'Polynomial regression vs. multilayer perceptron',
+ 'How to use correct weights in linear regression model',
+ 'Re: Logistic Regression',
+ 'Multivariate Time-Series Clustering',
+ 'The connection between optimization and generalization',
+ 'Are CNNs insensitive to rotations and shifts in images?',
+ 'How to plot learning curve and validation curve while using pipeline',
+ 'How does "linear algebraic" weight training function work?',
+ 'Alternatives to Logistic Regression',
+ 'Video classification of birds',
+ 'What should be the ratio of True vs False cases in a binary classifier dataset?',
+ 'The goal of fine tuning',
+ 'What are the cases where it is fine to initialize all weights to zero',
+ 'Which supervised learning algorithm to classify customers buying items',
+ 'How to understand backpropagation using derivative',
+ 'Given a query image Q and two other images X and Y, how to determine which one is most similar to Q?',
+ 'Could someone explain to me how back-prop is done for the generator in a GAN?',
+ 'Multi Class + Negative Class Image Classification Strategies',
+ 'More layers in NN give worse result',
+ 'RNNs for time series prediction - what configurations would make sense',
+ 'Matching similar strings',
+ '1d time series to time series approximation using deep learning',
+ 'Training with multi-series of different length with stateful LSTM',
+ 'Properly using activation functions of neural network',
+ 'XGBoost: Quantifying Feature Importances',
+ 'Validation data for multi-series stateful LSTM',
+ 'What are the benefits and tradeoffs of a 1D conv vs a multi-input seq2seq LSTM model?',
+ 'Rather use many linear classifiers than one complex one for numerical data?',
+ 'Backpropagation - simplest explanation',
+ 'Detect multicollinearity in real-life, non-normally distributed data',
+ 'Neural network example not working with sigmoid activation function',
+ 'Learning rate of perception',
+ 'How far can one go with excel?',
+ 'LSTM for time series - which window size to use',
+ 'LSTM train on varying length sequences',
+ 'In supervised learning, how to get info from correlation?',
+ 'Log loss vs accuracy for deciding between different learning rates?',
+ 'How to deal with missing data for Bernoulli Naive Bayes?',
+ 'Is there any way how to make samples balanced?',
+ 'What is the purpose of a 1x1 convolutional layer?',
+ 'Correlation between nominal categorical variables',
+ "Using LSTM's on Multivariate Input AND Multivariate Output",
+ 'Merging dataframes in Pandas is taking a surprisingly long time',
+ 'Deep network not able to learn imbalanced data beyond the dominant class',
+ 'Anomaly detection without any knowledge about structure',
+ 'Train a model for unstructured data',
+ 'Over fitting in Transfer Learning with small dataset',
+ 'Why can decision trees have a high amount of variance',
+ 'Why use Variational Autoencoders VAE instead of Autoencoders AE in Anomaly Detection?',
+ 'Why real-world output of my classifier has similar label ratio to training data?',
+ 'How to design batches in a stateful RNN',
+ 'Best way to classify plots which are overlapping?',
+ 'activation functions in CNN',
+ 'How to prevent model from recognizing false Classes',
+ 'How are Q-value and state value different in reinforcement learning',
+ 'A model that only works by setting all initial weights to zero',
+ 'Should input images be normalized to -1 to 1 or 0 to 1',
+ '2019 - Bleeding edge Reinforcement Learning techniques?',
+ 'RandomForest surprisingly high accuracy',
+ 'Doc2Vec for multi class classification',
+ 'What is the Value of X in KNN and Why?',
+ 'At what value of Accuracy of train and test we can say Model is overfitting and Underfitting?',
+ 'Can machine learning learn a function like finding maximum from a list?',
+ 'Error loading tidyverse in R Studio - No broom package'];
+ 
+ var relatedposts = ['statistics   computer science   data science ',
+ 'how to deal with time series which change in seasonality or other patterns ',
+ 'tools and protocol for reproducible data science using python',
+ 'organized processes to clean data',
+ 'nearest neighbors search for very high dimensional data',
+ 'can machine learning algorithms predict sports scores or plays ',
+ 'visualizing a graph with a million vertices',
+ 'data science project ideas',
+ 'is the r language suitable for big data',
+ 'data science project ideas',
+ 'dataset for named entity recognition on informal text',
+ 'books about the  science  in data science ',
+ 'need help with lda for selecting features',
+ 'deep learning basics',
+ 'neural network parse string data ',
+ 'training neural networks with unknown length of input',
+ 'tools and protocol for reproducible data science using python',
+ 'machine learning   features engineering from date time data',
+ 'what are the implications for training a tree ensemble with highly biased datasets ',
+ 'what is deconvolution operation used in fully convolutional neural networks ',
+ 'data science   machine learning resources ',
+ 'purpose of visualizing high dimensional data ',
+ 'quick guide into training highly imbalanced data sets',
+ 'clustering categorical data',
+ 'machine learning steps',
+ 'does the training set of one topic will be useful to predicate the sentiment for any other topic ',
+ 'boundary conditions for clustering',
+ 'how to detect overfitting of a stock screener',
+ 'k means clustering for mixed numeric and categorical data',
+ 'books about the  science  in data science ',
+ 'activation method and loss function for multilabel multiclass classification',
+ 'anomaly detection in time series data   help required',
+ 'why k fold cross validation  cv  overfits  or why discrepancy occurs between cv and test set ',
+ 'is it possible to customize the activation function in scikit learn s mlpclassifier ',
+ 'number of parameters in an lstm model',
+ 'pros and cons of python and r for data science',
+ 'how much training data does word2vec need ',
+ 'cluster documents based on topic similarity',
+ 'does scikit learn have forward selection stepwise regression algorithm ',
+ 'should the output of regression models  like svr  be normalized ',
+ 'are t sne dimensions meaningful ',
+ 'rnn s with multiple features',
+ 'combine two sets of clusters',
+ 'what is the  dying relu  problem in neural networks ',
+ 'text similarity using rnn',
+ 'does mlp always find local minimum',
+ 'neural networks  which cost function to use ',
+ 'why relu is better than the other activation functions',
+ 'strange behavior with adam optimizer when training for too long',
+ 'does mlp always find local minimum',
+ 'in supervised learning  why is it bad to have correlated features ',
+ 'why relu is better than the other activation functions',
+ 'what does it mean for the training data to be generated by a probability distribution over datasets',
+ 'why do convolutional neural networks work ',
+ 'neural network  backpropagation works on mnist  but training test set accuracy very low',
+ 'echo effect metric network',
+ 'how to set the number of neurons and layers in neural networks',
+ 'what is a good way to transform cyclic ordinal attributes ',
+ 'example of 1d convnet filter',
+ 'number of parameters in an lstm model',
+ 'using time series data from a sensor for ml',
+ 'heuristic argument for weight decay and regularization',
+ 'choosing a model for dataset with categorical variables',
+ 'using time series data from a sensor for ml',
+ 'how to apply my deep learning model to a new dataset ',
+ 'purpose of weights in neural networks',
+ 'smote and multi class oversampling',
+ 'similarity measure for multivariate time series with heterogeous length and content',
+ 'why large weights are prohibited in neural networks ',
+ 'why do convolutional neural networks work ',
+ 'how to set class weights for imbalanced classes in keras ',
+ 'how to set the number of neurons and layers in neural networks',
+ 'interpreting decision tree in context of feature importances',
+ 'data augmentation  rotating images and zero values',
+ 'k means clustering for mixed numeric and categorical data',
+ 'using a pre trained cnn classifier and apply it on a different image dataset',
+ 'how to  deep neural network weight initialization',
+ 'is there any standard pattern recognition algorithm in predicting an item which a user will be buying next  given i have the history of the purchases',
+ 'role derivative of sigmoid function in neural networks',
+ 'neural networks   find most similar images',
+ 'back propagation in cnn',
+ ' other  class in image classification',
+ 'how to set the number of neurons and layers in neural networks',
+ 'how to set the number of neurons and layers in neural networks',
+ 'sliding window leads to overfitting in lstm ',
+ 'example of 1d convnet filter',
+ 'batch size of stateful lstm in keras',
+ 'why large weights are prohibited in neural networks ',
+ 'xgboost   how to use feature importances  with xgbregressor   ',
+ 'stateful lstm   using different training window',
+ 'keras lstm with 1d time series',
+ 'is it possible to implement a classifier according to quarters  what about missing data ',
+ 'compute backpropagation',
+ 'does xgboost handle multicollinearity by itself ',
+ 'creating neural net for xor function',
+ 'do adaptive learning optimizers follow the steepest decent ',
+ 'do data scientists use excel ',
+ 'sliding window leads to overfitting in lstm ',
+ 'how to feed lstm with different input array sizes ',
+ 'dissmissing features based on correlation with target variable',
+ 'what is the relationship between the accuracy and the loss in deep learning ',
+ 'how does the naive bayes classifier handle missing data in training ',
+ 'binary classification of every time series step based on past and future values',
+ 'how are 1x1 convolutions the same as a fully connected layer ',
+ 'keras lstm with 1d time series',
+ 'multi dimentional and multivariate time series forecast  rnn lstm  keras',
+ 'how to get correlation between two categorical variable and a categorical variable and continuous variable ',
+ 'multivariate time series forecasting using lstm',
+ 'how to set class weights for imbalanced classes in keras ',
+ 'best approach for this unsupervised clustering problem with categorical data ',
+ 'how to set batch size  steps per epoch and validation steps',
+ 'are decision tree algorithms linear or nonlinear',
+ 'variational auto encoders  vae   why the random sample ',
+ 'train classifier on balanced dataset and apply on imbalanced dataset ',
+ 'how to feed lstm with different input array sizes ',
+ 'what is the best method for classification of time series data  should i use lstm or a different method ',
+ 'why is relu used as an activation function ',
+ 'fine tuning a cnn for recognizing two classes  but also being able to tell if none of them is present in an image',
+ 'what is the q function and what is the v function in reinforcement learning ',
+ 'initialize perceptron weights with zero',
+ 'data preprocessing  should we normalise images pixel wise ',
+ 'prioritized replay  what does importance sampling really do ',
+ 'how to quantify the performance of the classifier  multi class svm  using the test data ',
+ 'doc2vec   how to label the paragraphs  gensim ',
+ 'logic behind weighted knn',
+ 'validation training accuracy and overfitting',
+ 'sort numbers using only 2 hidden layers',
+ 'having trouble installing and loading tidyverse  no dib package'];
+				
+var ul = document.querySelector("ul");
+for (var i = 0; i < posts.length; i++) {
+  var post = posts[i];
+  var listItem = document.createElement("li");
+  listItem.textContent = post;
+  ul.appendChild(listItem);
+}
+$('ul li').click(function(e) 
+   { 
+      var index = $(this).index();
+	  var postIndex = (index);
+	  var relatedpost = relatedposts[postIndex];
+	  //alert(relatedpost);
+	  $('#relatedpost').text(relatedpost);
+	  //alert(posts[postIndex]);
+	  $('#post').text(posts[postIndex]);
+    })
+});
+</script>
+
+</body>
+</html>
