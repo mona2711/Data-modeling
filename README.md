@@ -1,4 +1,4 @@
-# Data Visualization with Heterogenous Data :metal:
+#Heterogenous Data Modeling:
 
 We illustrate some exciting insights for four of the most fundamental types of data: relational, spatio-temporal, graph-based, and textual. Unfortunately, these rarely exist in isolation. We work with multiple data models, i.e., the existence of heterogeneous data, is what most people face most of the time. It's one of the biggest challenges in Data Science, whether industry or academia.
 
