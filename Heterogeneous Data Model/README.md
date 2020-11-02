@@ -16,17 +16,17 @@ Tableau
 
 ## Insights :pencil:
 
-![ScreenShot 1](Output Vizualizations/images/Feature_1_as_Webpage.png)
+![ScreenShot 1](Vizualizations/images/Feature_1_as_Webpage.png)
 
-![ScreenShot 2](Output Vizualizations/images/Feature_1_Knowledge_Graph_rep_in_neo4j.png)
+![ScreenShot 2](Vizualizations/images/Feature_1_Knowledge_Graph_rep_in_neo4j.png)
 
-![ScreenShot 3](Output Vizualizations/images/Feature_1_output_as_XML_1.png)
+![ScreenShot 3](Vizualizations/images/Feature_1_output_as_XML_1.png)
 
-![ScreenShot 4](Output Vizualizations/images/Feature_1_output_as_XML_2.png)
+![ScreenShot 4](Vizualizations/images/Feature_1_output_as_XML_2.png)
 
-![ScreenShot 5](Output Vizualizations/images/Feature_1_output_as_XML.png)
+![ScreenShot 5](Vizualizations/images/Feature_1_output_as_XML.png)
 
-![ScreenShot 6](Output Vizualizations/images//Feature_2_as_Webpage.png)
+![ScreenShot 6](Vizualizations/images//Feature_2_as_Webpage.png)
 
 ![ScreenShot 7](Output Vizualizations/images//Feature_3_weak_and_strong_nodes_as_clusters_.png)
 
