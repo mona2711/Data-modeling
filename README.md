@@ -20,10 +20,10 @@ Tableau <br>
 
 ## Insights :pencil:
 
-![ScreenShot 1](ZReadme_img/chord_diagram.png)
+![ScreenShot 1](Readme_img/chord_diagram.png)
 
-![ScreenShot 3](ZReadme_img/Feature_3_nodes_and_edges_in_neo4j_.png)
+![ScreenShot 3](Readme_img/Feature_3_nodes_and_edges_in_neo4j_.png)
 
-![ScreenShot 2](ZReadme_img/Influential_subreddits.png)
+![ScreenShot 2](Readme_img/Influential_subreddits.png)
 
-![ScreenShot 4](ZReadme_img/Heat_map_showing_similarity_measure_among_users.png)
+![ScreenShot 4](Readme_img/Heat_map_showing_similarity_measure_among_users.png)
