@@ -16,21 +16,21 @@ Tableau
 
 ## Insights :pencil:
 
-![ScreenShot 1](Visualizations/Feature_1_as_Webpage.png)
+![ScreenShot 1](Output Vizualizations/images/Feature_1_as_Webpage.png)
 
-![ScreenShot 2](Visualizations/Feature_1_Knowledge_Graph_rep_in_neo4j.png)
+![ScreenShot 2](Output Vizualizations/images/Feature_1_Knowledge_Graph_rep_in_neo4j.png)
 
-![ScreenShot 3](Visualizations/Feature_1_output_as_XML_1.png)
+![ScreenShot 3](Output Vizualizations/images/Feature_1_output_as_XML_1.png)
 
-![ScreenShot 4](Visualizations/Feature_1_output_as_XML_2.png)
+![ScreenShot 4](Output Vizualizations/images/Feature_1_output_as_XML_2.png)
 
-![ScreenShot 5](Visualizations/Feature_1_output_as_XML.png)
+![ScreenShot 5](Output Vizualizations/images/Feature_1_output_as_XML.png)
 
-![ScreenShot 6](Visualizations/Feature_2_as_Webpage.png)
+![ScreenShot 6](Output Vizualizations/images//Feature_2_as_Webpage.png)
 
-![ScreenShot 7](Visualizations/Feature_3_weak_and_strong_nodes_as_clusters_.png)
+![ScreenShot 7](Output Vizualizations/images//Feature_3_weak_and_strong_nodes_as_clusters_.png)
 
-![ScreenShot 8](Visualizations/Feature_3_nodes_and_edges_in_neo4j_.png)
+![ScreenShot 8](Output Vizualizations/images//Feature_3_nodes_and_edges_in_neo4j_.png)
 
-![ScreenShot 9](Visualizations/Heat_map_showing_similarity_measure_among_users.png)
+![ScreenShot 9](Output Vizualizations/images//Heat_map_showing_similarity_measure_among_users.png)
 
