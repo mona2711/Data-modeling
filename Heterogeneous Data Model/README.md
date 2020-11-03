@@ -15,6 +15,8 @@ Neo4j <br>
 Tableau
 
 ## Insights :
+# Feature 1 - Best matched Post :
+
 
 ![ScreenShot 1](Visualizations/Feature3_XML.png)
 
@@ -24,11 +26,13 @@ Tableau
 
 ![ScreenShot 4](Visualizations/Feature_1_output_as_XML_2.png)
 
+# Feature 2 - Recommend Post :
+
 ![ScreenShot 5](Visualizations/Feature_1_output_as_XML.png)
 
-# Feature - Recommend Post :
-
 ![ScreenShot 6](Visualizations/Feature_2_as_Webpage.png)
+
+# Feature 3 - Most connected User :
 
 ![ScreenShot 7](Visualizations/Feature_3_weak_and_strong_nodes_as_clusters_.png)
 
