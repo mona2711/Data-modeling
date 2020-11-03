@@ -36,7 +36,7 @@ Tableau
 
 ![ScreenShot 7](Visualizations/Feature_3_weak_and_strong_nodes_as_clusters_.png)
 
-![ScreenShot 8](Visualizations/images/Feature_3_nodes_and_edges_in_neo4j_.png)
+![ScreenShot 8](Visualizations/Feature_3_nodes_and_edges_in_neo4j_.png)
 
 ![ScreenShot 9](Visualizations/Heat_map_showing_similarity_measure_among_users.png)
 
