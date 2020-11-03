@@ -2,22 +2,22 @@
 
 We have a broad understanding and a solid toolkit for four of the most fundamental types of data: relational, spatio-temporal, graph-based, and textual. Unfortunately, these rarely exist in isolation like how we have been studying them. Indeed, the co-presence of multiple data types, and the need to think concurrently in multiple data models, i.e., the existence of heterogeneous data, is what most people face most of the time. It's one of the biggest challenges in Data Science, whether industry or academia.
 
-
 ## Data :
 We are provided with dataset that is an archived data dump of an entire StackExchange community (incidentally, the one on Data Science). StackExchange is a question and answer (Q&A) forum, where users contribute "posts" (i.e., questions and answers) which they upvote. There is a tagging system to organise posts and a badge system to incentivise users.
 <br>
 The data dump contains a broad selection of the elements we have been looking at previously: the posts themselves are (marked up) temporal text, with revision histories; the votes resemble our previous MovieLens dataset; there are myriad opportunities to construct graph representations of elements of the data.The data itself is described in the following readme: https://ia800107.us.archive.org/27/items/stackexchange/readme.txt.
 
-## Packages and Software used :
-Python <br>
-matplotlib <br>
-Neo4j <br>
-Tableau
+##Objective : Model the data and build some features out of it.
+
+##Main Concepts: Graph Analysis, Text Analysis and TF-IDF cosine similarity
+
+## Packages,Software,Language used :
+Language : Python <br>
+Libraries: Pandas, numpy, matplotlib, nltk, sklearn  <br>
+Tools: Neo4j,Tableau <br>
 
 ## Insights :
-# Feature 1 - Best matched Post :
-
- 
+# Feature 1 - Finding most relevant post based on Title :
 
 ![ScreenShot 1](Visualizations/Feature_1_output_as_XML_2.png)
 
@@ -25,14 +25,15 @@ Tableau
 
 ![ScreenShot 3](Visualizations/Feature_1_as_Webpage.png)
 
-# Feature 2 - Recommend Post :
+# Feature 2 - Recommend Post to user :
 
 ![ScreenShot 4](Visualizations/Feature_1_output_as_XML.png)
+
 ![ScreenShot 5](Visualizations/Feature_2_as_Webpage.png)
 
 
+# Feature 3 - Clustering most connected User :
 
-# Feature 3 - Most connected User :
 ![ScreenShot 7](Visualizations/Heat_map_showing_similarity_measure_among_users.png)
 
 ![ScreenShot 6](Visualizations/Feature3_XML.png)
