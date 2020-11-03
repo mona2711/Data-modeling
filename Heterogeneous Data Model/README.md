@@ -30,8 +30,7 @@ Tools: Neo4j <br>
 ## 3) Clustering of strongly connected users
 
 # Feature 1 - Finding most relevant post based on Title 
-### Concepts:
-Adjacency List, Triple store Format, Knowledge Graph, TF-IDF 
+### Concepts: Adjacency List, Triple store Format, Knowledge Graph, TF-IDF 
 
 ![ScreenShot 0](Visualizations/table_most_related_post.PNG)
 
@@ -42,8 +41,7 @@ Adjacency List, Triple store Format, Knowledge Graph, TF-IDF
 ![ScreenShot 3](Visualizations/Feature_1_as_Webpage.png)
 
 # Feature 2 - Recommend Post to user :
-### Concepts:
-TF-IDF, Relational Data Mapping
+### Concepts: TF-IDF, Relational Data Mapping
 
 ![ScreenShot 2.1](Visualizations/feature_2_table1.PNG)
 
@@ -55,10 +53,10 @@ TF-IDF, Relational Data Mapping
 
 ![ScreenShot 5](Visualizations/Feature_2_as_Webpage.png)
 
+<br>
 
 # Feature 3 - Clustering most connected User :
-### Concepts:
-Consine Similarity using TF-IDF, Clustering
+### Concepts: Consine Similarity using TF-IDF, Clustering
 
 ![ScreenShot 7](Visualizations/Heat_map_showing_similarity_measure_among_users.png)
 
