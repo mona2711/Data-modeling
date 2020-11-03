@@ -28,6 +28,7 @@ Tools: Neo4j <br>
 ## 1) Finding most relevant post based on Title
 ## 2) Recommend Post to Users
 ## 3) Clustering of strongly connected users
+<br>
 
 # Feature 1 - Finding most relevant post based on Title 
 ### Concepts: Adjacency List, Triple store Format, Knowledge Graph, TF-IDF 
