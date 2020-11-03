@@ -7,11 +7,14 @@ We are provided with dataset that is an archived data dump of an entire StackExc
 <br>
 The data dump contains a broad selection of the elements we have been looking at previously: the posts themselves are (marked up) temporal text, with revision histories; the votes resemble our previous MovieLens dataset; there are myriad opportunities to construct graph representations of elements of the data.The data itself is described in the following readme: https://ia800107.us.archive.org/27/items/stackexchange/readme.txt.
 
-### Objective : Model the data and build some features out of it.
+### Objective :
+Model the data and build some features out of it.
 
-### Main Concepts: Graph Analysis, Text Analysis and TF-IDF cosine similarity
+### Main Concepts:
+Graph Analysis, Text Analysis and TF-IDF cosine similarity
 
-### Implementation : Text data preprocessing , Data Modeling , Data Visualization
+### Implementation : 
+Text data preprocessing , Data Modeling , Data Visualization
 
 ### Packages,Software,Language used :
 Language : Python <br>
