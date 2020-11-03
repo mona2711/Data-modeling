@@ -22,7 +22,7 @@ Text data preprocessing , Data Modeling , Data Visualization
 ### Packages,Software,Language used :
 Language : Python <br>
 Libraries: Pandas, numpy, matplotlib, nltk, sklearn  <br>
-Tools: Neo4j,Tableau <br>
+Tools: Neo4j <br>
 
 ## Insights : 
 ## 1) Finding most relevant post based on Title
