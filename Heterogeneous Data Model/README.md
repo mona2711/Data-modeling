@@ -10,6 +10,9 @@ The data dump contains a broad selection of the elements we have been looking at
 ### Objective :
 Model the data and build some features out of it.
 
+### Implementation :
+Choose to explore how post are linked with each other and how users are linked with each other to build features.
+
 ### Main Concepts:
 Graph Analysis, Text Analysis and TF-IDF cosine similarity
 
