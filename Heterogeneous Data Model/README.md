@@ -13,7 +13,7 @@ Model the data and build some features out of it.
 ### Implementation :
 Choose to explore how post are linked with each other and how users are linked with each other to build features.
 
-### Main Concepts:
+### Key Idea:
 Graph Analysis, Text Analysis and TF-IDF cosine similarity
 
 ### Implementation : 
