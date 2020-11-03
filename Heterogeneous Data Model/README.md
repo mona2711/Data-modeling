@@ -10,10 +10,10 @@ The data dump contains a broad selection of the elements we have been looking at
 ### Objective :
 Model the data and build some features out of it.
 
-### Implementation :
+### Key Idea :
 Choose to explore how post are linked with each other and how users are linked with each other to build features.
 
-### Key Idea:
+### Main Concepts:
 Graph Analysis, Text Analysis and TF-IDF cosine similarity
 
 ### Implementation : 
@@ -25,9 +25,9 @@ Libraries: Pandas, numpy, matplotlib, nltk, sklearn  <br>
 Tools: Neo4j,Tableau <br>
 
 ## Insights : 
-# 1) Finding most relevant post based on Title
-# 2) Recommend Post to Users
-# 3) Clustering of strongly conncted users
+## 1) Finding most relevant post based on Title
+## 2) Recommend Post to Users
+## 3) Clustering of strongly connected users
 
 # Feature 1 - Finding most relevant post based on Title :
 
