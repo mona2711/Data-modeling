@@ -25,9 +25,9 @@ Libraries: Pandas, numpy, matplotlib, nltk, sklearn  <br>
 Tools: Neo4j <br>
 
 ## Insights : 
-## 1) Finding most relevant post based on Title
-## 2) Recommend Post to Users
-## 3) Clustering of strongly connected users
+### 1) Finding most relevant post based on Title
+### 2) Recommend Post to Users
+### 3) Clustering of strongly connected users
 <br>
 
 # Feature 1 - Finding most relevant post based on Title 
